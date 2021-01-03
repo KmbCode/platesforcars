@@ -13,3 +13,215 @@
  *= require_tree .
  *= require_self
  */
+@charset "utf-8";
+
+/* PFC CSS */
+@media screen and (max-device-width: 480px){
+  body{
+    -webkit-text-size-adjust: none;
+  }
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background: url(../img/background.jpg) center top no-repeat, url(../img/background_2.jpg) center top -2900px repeat; background-attachment:fixed;  
+	text-align: left;
+}
+
+.main_table {
+	box-shadow: 0px 0px 50px 20px black;
+	border-right: 0px solid black;
+	border-left: 0px solid black;
+}
+
+.maintext {
+	font-size: 13px;
+	font-family: Verdana;
+	text-align: left;
+}
+.maintext_white {
+	font-size: 14px;
+	font-family: Verdana;
+	text-align: left;
+	color:#FFF;
+}
+.payment_text {
+	font-size: 15px;
+	font-family: Verdana;
+}
+.heading1 {
+	font-size: 18px;
+	font-family: Verdana;
+	font-weight: bold;
+}
+.heading2 {
+	font-size: 16px;
+	font-family: Verdana;
+	font-weight: bold;
+}
+.heading2 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.whiteboldtext {
+	font-size: 12px;
+	font-family: Verdana;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: left;
+}
+.whiteboldtextlarge {
+	font-family: Verdana;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.whiteboldtextextralarge {
+	font-family: Verdana;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+a.whiteboldtextlarge:hover {
+	font-family: Verdana;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.designerprice {
+	animation: blinker;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear; 
+	font-size: 16px;
+	font-family: Verdana;
+	color: #fffc1e;
+	font-weight: bold;
+}
+
+.designeroptions {
+	font-size: 14px;
+	font-family: Verdana;
+	color: #FFFFFF;
+	text-align: left;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.typeheading {
+	font-size: 14px;
+	font-family: Verdana;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.white {
+	font-size: 14px;
+	font-family: Verdana;
+	color: #FFFFFF;
+}
+.whitelinks {
+	color: #FFFFFF;
+}
+.error {
+	color: #e80000;
+	font-weight: bold;
+	font-size: 10px;
+}
+.faqheading {
+	background-image: linear-gradient(#8cc2fc, #074989);
+	font-size: 16px;
+	font-family: Verdana;
+	font-weight: bold;
+	color: #ffffff;
+	border-radius: 10px;
+	padding: 10px;
+	width: 250px;
+	cursor:pointer;
+} 
+.faqheading:hover {
+	background-image: linear-gradient(#074989, #8cc2fc);
+	color: #ffffff;
+} 
+.error {
+    border:3px solid red;
+  	font-size: 12px;
+	font-family: Verdana;
+}
+/* MAIN LINKS */
+
+a {
+	font-family: Verdana;
+	color: #666666;
+}
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #666666;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+
+/* LINKS CSS */
+
+a.nav:link {
+	text-decoration: none;
+	color: #ffffff;
+	line-height: 22px;
+}
+a.nav:visited {
+	text-decoration: none;
+	color: #ffffff;
+}
+a.nav:hover {
+	text-decoration: none;
+	color: #bdbdbd;
+}
+a.nav:active {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/* faq white links */
+
+a.whiteboldtextextralarge:link {
+	text-decoration: none;
+	color: #ffffff;
+	font-size:16px;
+	line-height: 22px;
+}
+a.whiteboldtextextralarge:visited {
+	text-decoration: none;
+	font-size:16px;
+	color: #ffffff;
+}
+a.whiteboldtextextralarge:hover {
+	text-decoration: none;
+	font-size:16px;
+	color: #bdbdbd;
+}
+a.whiteboldtextextralarge:active {
+	text-decoration: none;
+	font-size:16px;
+	color: #ffffff;
+}
+
+/* HOVER IMG */
+.hover_img a { position:static; }
+.hover_img a span { position:fixed; display:none; z-index:99;}
+.hover_img a:hover span { display:block; position: fixed; top: 5px; width:800px; margin-left:40px;}
